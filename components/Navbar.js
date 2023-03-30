@@ -12,7 +12,7 @@ const Navbar = () => {
     "contact",
   ];
   return (
-    <div className="w-full fixed top-0 bg-red-500 py-4 px-8 grid grid-cols-navbarCols grid-rows-1 grid-flow-col items-center gap-x-2 text-white">
+    <div className="w-full fixed top-0 z-50 bg-red-500 py-4 px-8 grid grid-cols-navbarCols grid-rows-1 grid-flow-col items-center gap-x-2 text-white">
       <div className="grid auto-cols-auto grid-rows-1 grid-flow-col items-center gap-x-2">
         <div className="bg-white flex items-center justify-center rounded-full p-2">
           <AiOutlinePhone className="text-4xl text-red-500" />
