@@ -19,7 +19,7 @@ const Slideshow = ({ slideShowImages }) => {
   const slideImages = useMemo(
     () =>
       slideShowImages.map(({ name, src }) => (
-        <Carousel.Item key={name} className="w-full h-full ">
+        <Carousel.Item key={name} className="w-full h-full">
           <Image src={src} fill style={{ objectFit: "contain" }} alt={name} />
         </Carousel.Item>
       )),
