@@ -1,7 +1,10 @@
-import Image from "next/image";
 import React from "react";
-import { Carousel } from "react-bootstrap";
 import pizza1 from "../public/images/pizza1.png";
+import pizza2 from "../public/images/pizza2.png";
+import pizza3 from "../public/images/pizza3.png";
+import pizza4 from "../public/images/pizza4.png";
+import Slideshow from "./Slideshow";
+
 const Featured = () => {
   const slideShowImages = [
     {
@@ -9,32 +12,22 @@ const Featured = () => {
       src: pizza1,
     },
     {
-      name: "pizza 2",
-      src: "https://www.freeiconspng.com/uploads/pizza-png-24.png",
-    },
-    {
       name: "pizza 3",
-      src: "https://www.freeiconspng.com/uploads/pizza-png-19.png",
+      src: pizza3,
     },
     {
       name: "pizza 4",
-      src: "https://www.freeiconspng.com/uploads/pizza-png-8.png",
+      src: pizza4,
     },
-
     {
-      name: "pizza 5",
-      src: "https://www.freeiconspng.com/uploads/pizza-png-15.png",
+      name: "pizza 2",
+      src: pizza2,
     },
   ];
+
   return (
     <div className="w-full h-screen pt-28 bg-red-800 px-6 pb-2">
-      <Carousel className="w-full h-full ">
-        {slideShowImages.map(({ name, src }) => (
-          <Carousel.Item key={name} className="w-full h-full ">
-            <Image src={src} fill style={{ objectFit: "contain" }} alt={name} />
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      <Slideshow slideShowImages={slideShowImages}/>
     </div>
   );
 };
