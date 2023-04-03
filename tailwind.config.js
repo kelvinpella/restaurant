@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        "90vh": "90vh",
+      },
       gridTemplateColumns: {
         navbarCols: "auto 1fr auto",
       },

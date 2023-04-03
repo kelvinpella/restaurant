@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const Footer = () => {
   const footerItems = [
@@ -18,12 +18,17 @@ const Footer = () => {
         ],
       },
     },
-    { title: "Working Hours", details: {time:'9:00 AM - 11:00 PM'} },
+    { title: "Working Hours", details: { time: "9:00 AM - 11:00 PM" } },
   ];
   return (
     <div className="w-full p-8 flex justify-end bg-bgFooter bg-center bg-cover">
       {footerItems.map(({ title, details }) => {
-        const { mobile = null, email = null, addresses = null ,time=null} = details;
+        const {
+          mobile = null,
+          email = null,
+          addresses = null,
+          time = null,
+        } = details;
         return (
           <div key={title} className="m-6">
             <h2 className="uppercase text-xl text-yellow-600 font-bold my-2">
@@ -52,19 +57,15 @@ const Footer = () => {
                   </a>
                 </p>
               )}
-              {time && (
-                <p className="py-2">
-                 {time}
-                </p>
-              )}
+              {time && <p className="py-2">{time}</p>}
               {addresses && (
                 <div>
                   {addresses.map((address, i) => (
-                    <>
-                      <address key={i} className="whitespace-pre-line">
+                    <Fragment key={i}>
+                      <address className="whitespace-pre-line">
                         {address.split(",").join("\n")}
                       </address>
-                    </>
+                    </Fragment>
                   ))}
                 </div>
               )}

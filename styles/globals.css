@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  table,th,td {
+    @apply border p-2 capitalize
+  }
+}
 .carousel-inner {
   height: 100%;
 }

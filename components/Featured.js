@@ -26,8 +26,8 @@ const Featured = () => {
   ];
 
   return (
-    <div className="w-full h-screen pt-28 bg-red-800 px-6 pb-2">
-      <Slideshow slideShowImages={slideShowImages}/>
+    <div className="w-full h-90vh  bg-red-800  pb-2">
+      <Slideshow slideShowImages={slideShowImages} />
     </div>
   );
 };
