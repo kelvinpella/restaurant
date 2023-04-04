@@ -1,11 +1,10 @@
-import { Field, Form, Formik } from "formik";
-import React from "react";
-import * as Yup from "yup";
-import CustomTextInput from "./Formik/CustomTextInput";
-import ReactSelect from "./ReactSelect";
 import { pizzaData } from "@/common/exportedData";
+import ReactSelect from "./ReactSelect";
+import * as Yup from "yup";
+import { Field, Form, Formik } from "formik";
+import CustomTextInput from "./CustomTextInput";
 import SelectedPizzaTotalPrice from "./SelectedPizzaTotalPrice";
-import SubmitButton from "./Formik/SubmitButton";
+import SubmitButton from "./SubmitButton";
 
 const PizzaSelectionForm = () => {
   // common pizza values for any selected pizzaId
@@ -75,7 +74,7 @@ const PizzaSelectionForm = () => {
             <Field {...additionalIngredientsDropdown} />
           </div>
           <SelectedPizzaTotalPrice />
-          <SubmitButton/>
+          <SubmitButton />
         </Form>
       </Formik>
     </div>

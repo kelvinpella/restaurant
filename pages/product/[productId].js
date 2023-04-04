@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Table from "@/components/Table";
 import { pizzaData } from "@/common/exportedData";
-import PizzaSelectionForm from "@/components/PizzaSelectionForm";
+import PizzaSelectionForm from "@/components/Formik/PizzaSelectionForm";
 
 const Product = () => {
   // common pizza values for any selected pizzaId
