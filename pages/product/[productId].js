@@ -1,17 +1,28 @@
 import React from "react";
 import Image from "next/image";
-import Table from "@/components/Table";
 import { pizzaData } from "@/common/exportedData";
 import PizzaSelectionForm from "@/components/Formik/PizzaSelectionForm";
+import Table from "@/components/Tables/Table";
 
 const Product = () => {
   // common pizza values for any selected pizzaId
   const { img, name, availableSizes, description } = pizzaData;
+  const getTableData = () => {
+    // convert to array of array values for value and price keys [['small',19.9]]
+    const dataArr = Object.keys(availableSizes).map((key) => {
+      //get values of size and price
+      const { value, price } = availableSizes[key];
+      return [value, price];
+    });
+    console.log(dataArr);
+    return dataArr;
+  };
+
   // Table props of  available pizza sizes
   const availablePizzaSizeProps = {
     tableCaption: "Available Pizza Sizes",
     tableHead: ["size", "price ($)"],
-    tableBody: Object.keys(availableSizes).map((key) => availableSizes[key]),
+    tableBody: getTableData(),
   };
   return (
     <div className="w-full grid grid-cols-2 gap-x-6 py-6 bg-white ">
