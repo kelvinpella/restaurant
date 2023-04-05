@@ -14,7 +14,6 @@ const Product = () => {
       const { value, price } = availableSizes[key];
       return [value, price];
     });
-    console.log(dataArr);
     return dataArr;
   };
 
