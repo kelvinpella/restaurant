@@ -1,6 +1,6 @@
 import React from "react";
 
-const CheckoutSummary = () => {
+const CheckoutSummary = ({ title, buttonText }) => {
   const checkoutSummary = [
     { item: "subtotal", value: "$78.00" },
     { item: "discount", value: "$0.00" },
@@ -8,7 +8,7 @@ const CheckoutSummary = () => {
   ];
   return (
     <div className="max-w-lg max-h-80 py-6 px-10 bg-yellow-600 capitalize font-bold text-lg">
-      <h1 className="uppercase font-bold text-xl my-3 text-center">your order</h1>
+      <h1 className="uppercase font-bold text-xl my-3 text-center">{title}</h1>
       <div>
         {checkoutSummary.map(({ item, value }) => (
           <div key={item} className="flex items-center  my-2">
@@ -18,7 +18,7 @@ const CheckoutSummary = () => {
         ))}
       </div>
       <button className="uppercase py-2 px-2.5 w-full my-4  bg-yellow-400 rounded-md">
-        checkout
+        {buttonText}
       </button>
     </div>
   );

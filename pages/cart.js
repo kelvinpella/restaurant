@@ -24,12 +24,16 @@ const Cart = () => {
     tableHead: ["product", "name", "extras", "price ($)", "quantity", "total"],
     tableBody: tableData,
   };
+  const checkoutSummary = {
+    title: "your order",
+    buttonText: "checkout",
+  };
   return (
     <div className="w-full grid grid-cols-2 grid-rows-1 grid-flow-col gap-x-6 bg-white p-6 ">
       <div className=" justify-self-end">
         <Table {...selectedProducts} />
       </div>
-      <CheckoutSummary />
+      <CheckoutSummary {...checkoutSummary} />
     </div>
   );
 };
