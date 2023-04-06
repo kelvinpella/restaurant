@@ -6,10 +6,10 @@ import {
   MdOutlineArrowForwardIos,
 } from "react-icons/md";
 const PreviousIcon = () => {
-  return <MdOutlineArrowBackIos className="text-3xl  h-20 w-20 " />;
+  return <MdOutlineArrowBackIos className="h-10 md:h-20 w-10 md:w-20 " />;
 };
 const NextIcon = () => {
-  return <MdOutlineArrowForwardIos className="text-3xl  h-20 w-20 " />;
+  return <MdOutlineArrowForwardIos className="h-10 md:h-20 w-10 md:w-20 " />;
 };
 const Slideshow = ({ slideShowImages }) => {
   const carousalProps = {
@@ -19,7 +19,7 @@ const Slideshow = ({ slideShowImages }) => {
   const slideImages = useMemo(
     () =>
       slideShowImages.map(({ name, src }) => (
-        <Carousel.Item key={name} className="w-full h-full">
+        <Carousel.Item key={name} className="w-full h-full ">
           <Image src={src} fill style={{ objectFit: "contain" }} alt={name} />
         </Carousel.Item>
       )),

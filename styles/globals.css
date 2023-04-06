@@ -6,10 +6,13 @@
 @tailwind utilities;
 
 @layer base {
-  table,th,td {
-    @apply border p-2.5 capitalize
+  table,
+  th,
+  td {
+    @apply border p-2.5 capitalize;
   }
 }
 .carousel-inner {
   height: 100%;
+  padding:0 40px;
 }
