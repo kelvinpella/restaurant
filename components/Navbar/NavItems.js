@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 const NavItems = () => {
   const navLinks = [
-    "Navigation items to be added",
+    "items to be added soon",
   ];
   return (
     <div className="w-full px-3 md:w-9/12 mx-auto flex flex-col md:flex-row items-end  md:items-center md:justify-center capitalize font-bold  ">

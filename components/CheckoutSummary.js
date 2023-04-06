@@ -7,8 +7,8 @@ const CheckoutSummary = ({ title, buttonText }) => {
     { item: "total", value: "$78.00" },
   ];
   return (
-    <div className="max-w-lg max-h-80 py-6 px-10 bg-yellow-600 capitalize font-bold text-lg">
-      <h1 className="uppercase font-bold text-xl my-3 text-center">{title}</h1>
+    <div className="w-full md:w-10/12 lg:max-w-lg mx-auto max-h-80 py-6 px-10 bg-yellow-600 capitalize font-bold text-base md:text-lg">
+      <h1 className="uppercase font-bold text-lg md:text-xl my-3 text-center">{title}</h1>
       <div>
         {checkoutSummary.map(({ item, value }) => (
           <div key={item} className="flex items-center  my-2">

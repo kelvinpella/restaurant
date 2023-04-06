@@ -29,8 +29,8 @@ const Cart = () => {
     buttonText: "checkout",
   };
   return (
-    <div className="w-full grid grid-cols-2 grid-rows-1 grid-flow-col gap-x-6 bg-white p-6 ">
-      <div className=" justify-self-end">
+    <div className="w-full lg:max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 auto-rows-auto grid-flow-row lg:grid-rows-1 justify-center lg:justify-start gap-x-6 bg-white py-4 px-2 md:p-6 ">
+      <div className="justify-self-center lg:justify-self-end my-4 lg:m-0">
         <Table {...selectedProducts} />
       </div>
       <CheckoutSummary {...checkoutSummary} />

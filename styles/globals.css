@@ -9,7 +9,7 @@
   table,
   th,
   td {
-    @apply border p-2.5 capitalize;
+    @apply  border text-sm md:text-lg p-1 md:p-2.5 capitalize;
   }
 }
 .carousel-inner {

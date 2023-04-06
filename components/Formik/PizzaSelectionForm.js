@@ -64,7 +64,7 @@ const PizzaSelectionForm = () => {
         onSubmit={onSubmit}
       >
         <Form>
-          <div className="w-full pr-4 grid grid-cols-3 grid-rows-1  gap-x-2 capitalize">
+          <div className="w-full md:text-lg lg:pr-4 grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-1  gap-3 lg:gap-2 capitalize">
             <Field {...pizzaSizeDropdown} />
             <CustomTextInput
               type="number"

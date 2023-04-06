@@ -24,13 +24,13 @@ const Product = () => {
     tableBody: getTableData(),
   };
   return (
-    <div className="w-full grid grid-cols-2 gap-x-6 py-6 bg-white ">
+    <div className="w-full grid auto-cols-auto grid-flow-row lg:grid-cols-2 gap-x-6 py-6 bg-white ">
       <div className="w-full flex items-center justify-center">
         <Image src={img} alt="Pizza Image" className="w-10/12 mx-auto" />
       </div>
-      <div className="w-full">
-        <h1 className="uppercase text-2xl font-bold my-4">{name}</h1>
-        <p className="my-4 w-10/12">{description}</p>
+      <div className="w-full px-2">
+        <h1 className="uppercase text-2xl md:text-4xl font-bold my-4 text-center lg:text-start">{name}</h1>
+        <p className="my-4 w-full md:w-10/12 mx-auto p-2 md:text-xl text-center">{description}</p>
         <Table {...availablePizzaSizeProps} />
         <PizzaSelectionForm />
       </div>

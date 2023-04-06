@@ -40,8 +40,8 @@ const Orders = () => {
     buttonText: "paid",
   };
   return (
-    <div className="w-full grid grid-cols-2 grid-rows-1 gap-x-6 bg-white py-6 px-2">
-      <div className="w-full my-4 mx-2">
+    <div className="w-full grid grid-cols-1 lg:grid-cols-2 auto-rows-auto lg:grid-rows-1 grid-flow-row gap-x-6 bg-white py-6 px-2">
+      <div className="w-full my-4 px-2">
         <Table {...orderSummary} />
         <OrderStatus orderStatusProps={{ orderStatus }} />
       </div>
