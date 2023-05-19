@@ -6,7 +6,7 @@ const Footer = () => {
       title: "Contact Us",
       details: {
         mobile: "+255 22 2170173",
-        email: "md@pizzaparadise.go.tz",
+        email: "md@pizzaparadiso.go.tz",
       },
     },
     {
@@ -21,7 +21,7 @@ const Footer = () => {
     { title: "Working Hours", details: { time: "9:00 AM - 11:00 PM" } },
   ];
   return (
-    <div className="w-full p-2 md:p-8 flex flex-col md:flex-row  md:justify-end bg-bgFooter bg-center bg-cover">
+    <div className="w-full px-2 md:px-8 py-16 mt-16 flex flex-col md:flex-row  md:justify-end bg-bgFooter bg-center bg-cover">
       {footerItems.map(({ title, details }) => {
         const {
           mobile = null,

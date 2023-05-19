@@ -8,7 +8,7 @@ const SubmitButton = () => {
   return (
     <button
       type="submit"
-      className="py-2 px-3 bg-red-500 rounded-md text-white disabled:cursor-not-allowed disabled:opacity-50"
+      className="py-2 px-3 my-4 bg-red-500 rounded-md text-white disabled:cursor-not-allowed disabled:opacity-50"
       disabled={formHasErrors()}
     >
       Add to Cart

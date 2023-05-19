@@ -49,9 +49,9 @@ const Navbar = () => {
         <div className="flex  justify-between md:justify-self-end text-3xl md:text-4xl md:pr-6 ">
           <div className="relative">
             <AiOutlineShoppingCart />
-            <div className="absolute w-4 h-4 md:w-5 md:h-5 -top-2.5 left-6  md:-right-2.5 text-sm md:text-base flex items-center justify-center bg-white p-1 rounded-full text-red-800 font-bold">
+            {/* <div className="absolute w-4 h-4 md:w-5 md:h-5 -top-2.5 left-6  md:-right-2.5 text-sm md:text-base flex items-center justify-center bg-white p-1 rounded-full text-red-800 font-bold">
               2
-            </div>
+            </div> */}
           </div>
           <div className="md:hidden">
             {!isMenuOpen ? (

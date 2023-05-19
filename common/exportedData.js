@@ -7,7 +7,7 @@ export const pizzaData = {
   availableSizes: {
     small: { category: "size", label: "small", value: "small", price: 19.9 },
     medium: { category: "size", label: "medium", value: "medium", price: 23.9 },
-    large: { category: "size", label: "large", value: "large", price: 19.9 },
+    large: { category: "size", label: "large", value: "large", price: 27.9 },
   },
   availableAdditionalIngredients: [
     {
